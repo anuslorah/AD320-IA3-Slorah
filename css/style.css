@@ -1,0 +1,47 @@
+body {
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+#one {
+	grid-area: top;
+	min-height: 100px;
+	padding-top: 30px;
+}
+
+#two {
+	grid-area: right;
+	min-height: 100px;
+}
+
+#three {
+	grid-area: left;
+	min-height: 100px;
+}
+
+#four {
+	grid-area: center;
+	min-height: 100px;
+}
+
+#five {
+	grid-area: bottom;
+	min-height: 100px;
+}
+
+.grid-container {
+	display: grid;
+	width: 60%;
+	margin: 0 auto;
+	grid-template-areas:
+		'top top top top right '
+    	'left left center center right'
+		'bottom bottom bottom bottom right';
+	grid-gap: 10px;
+}
+.grid-container > div {
+	padding: 10px;
+	background-color: aliceblue;
+	text-align: center;
+	font-size: 18px;
+}
